@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>LocalSite</title>
+</head>
+<body>
+
+    <header>
+        <div class="title">Comments</div>
+    </header>
+    <main class="content">
+        <div class="div1">
+            Posting
+            <input id="text_block" type="text" placeholder="Name">
+            <input id="text_block" type="email" placeholder="E-mail">
+            <div1 class="textarea-wrapper">
+                <textarea id="text-area" maxlength="300" placeholder="Text"></textarea>
+                <div id="char-count">0 / 300</div>
+            </div1>
+            <button type="submit">Post</button>
+        </div>
+        <div class="div2">Posted (WIP)</div>
+    </main>
+    <script>
+        const textarea = document.getElementById("text-area");
+        const charCount = document.getElementById("char-count");
+
+        textarea.addEventListener("input", () => {
+            const currentLength = textarea.value.length;
+            charCount.textContent = `${currentLength} / 300`;
+    });
+    </script>
+
+    <footer>FOOTER @2026</footer>
+</body>
+</html>
