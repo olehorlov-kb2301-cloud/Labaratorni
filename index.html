@@ -4,36 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>LocalSite</title>
+    <title>Info</title>
 </head>
 <body>
 
     <header>
-        <div class="title">Comments</div>
+        <div class="title">Information</div>
     </header>
+    <p class="theme">F/A-18 Hornet</p>
     <main class="content">
-        <div class="div1">
-            Posting
-            <input id="text_block" type="text" placeholder="Name">
-            <input id="text_block" type="email" placeholder="E-mail">
-            <div1 class="textarea-wrapper">
-                <textarea id="text-area" maxlength="300" placeholder="Text"></textarea>
-                <div id="char-count">0 / 300</div>
-            </div1>
-            <button type="submit">Post</button>
+        <div class="div2">
+            <div class="divtext">
+            <p> McDonnell Douglas F/A-18 Hornet is an all-weather supersonic, twin-engined, carrier-capable, 
+                multirole combat aircraft, designed as both a fighter and ground 
+                attack aircraft (hence the F/A designation). 
+                Designed by McDonnell Douglas and Northrop, the F/A-18 was derived from the YF-17 that lost 
+                against the YF-16 in the United States Air Force's lightweight fighter program. The United 
+                States Navy selected the YF-17 for the Navy Air Combat Fighter program, further developed 
+                the design and renamed it F/A-18; the United States Marine Corps would also adopt the aircraft. 
+                The Hornet is also used by the air forces of several other nations, and formerly by the U.S. 
+                Navy's Flight Demonstration Squadron, the Blue Angels. </p>
+                </div>
+            <div class="image">
+                <video src="src/media/f-18.mp4" alt="F/A-18 Hornet" autoplay muted ></video>
+            </div>
         </div>
-        <div class="div2">Posted (WIP)</div>
+
     </main>
-    <script>
-        const textarea = document.getElementById("text-area");
-        const charCount = document.getElementById("char-count");
-
-        textarea.addEventListener("input", () => {
-            const currentLength = textarea.value.length;
-            charCount.textContent = `${currentLength} / 300`;
-    });
-    </script>
-
     <footer>FOOTER @2026</footer>
+
 </body>
 </html>

@@ -8,25 +8,16 @@
     padding: 20px;
     min-height: calc(100vh - 160px); /* header + footer */
 }
-.div1 {
-    width: 25%;
-    font-family: "Minecraft", Arial, sans-serif;
-    background: #8A244B;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    gap: 10px;
-
-    border-radius: 16px;
-    padding: 20px;
-}
 .div2 {
-    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     font-family: "Minecraft", Arial, sans-serif;
     background: #111F35;
     color: white;
+    width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 10px;
 
     border-radius: 16px;
     padding: 20px;
@@ -43,11 +34,6 @@ footer {
     font-family: "Minecraft", Arial, sans-serif;
 
     font-size: 20px;
-}
-.block{
-    display: flex;
-    background-color: #111F35;
-    color: white;
 }
 html{
     scrollbar-color: rgba(255,255,255,0.3) transparent;
@@ -83,69 +69,27 @@ header .title {
     justify-content: center;
     align-items: center;
 }
-.div1 button{
+.theme{
+    display: flex;
+    justify-content: center;
     font-family: "Minecraft", Arial, sans-serif;
-     padding: 12px 24px;
-  font-size: 18px;
-  background-color: #8A244B;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  align-self: center;  /* по центру горизонтально */
-  margin-bottom: 20px; /* відступ від низу сторінки */
+    font-size: 48px;
+    margin-bottom: 0px;
+    margin-top: 24px;
+    color: #111F35;
 }
-::placeholder{
-    font-family: "Minecraft", Arial, sans-serif;
+p{
+    display: flex;
+    justify-content: space-around;
+    border: 10px;
 }
-textarea-wrapper {
-  width: 100%;
-  max-width: 500px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.divtext{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-size: 24px;
+    margin-right: 15px;
 }
-
-#text-area {
-  width: 100%;
-  min-height: 100px;       /* трохи вища висота */
-  padding: 10px 12px;
-  font-size: 16px;
-  line-height: 1.5;
-  box-sizing: border-box;
-  font-family: "Minecraft", Arial, sans-serif;
-
-  border: 2px solid #8A244B;  /* Minecraft-style рамка */
-  border-radius: 8px;
-  background-color: #111F35;   /* темний фон */
-  color: white;
-  resize: vertical;             /* можна змінювати висоту, але не ширину */
-  outline: none;
-}
-
-#text-area::placeholder {
-  color: #ccc;
-}
-
-#char-count {
-  font-size: 14px;
-  color: #fff;
-  text-align: right;
-}
-#text_block{
-    width: 100%;
-  min-height: 100px;       /* трохи вища висота */
-  padding: 10px 12px;
-  font-size: 16px;
-  line-height: 1.5;
-  box-sizing: border-box;
-  font-family: "Minecraft", Arial, sans-serif;
-
-  border: 2px solid #8A244B;  /* Minecraft-style рамка */
-  border-radius: 8px;
-  background-color: #111F35;   /* темний фон */
-  color: white;
-  resize: vertical;             /* можна змінювати висоту, але не ширину */
-  outline: none;
+.image{
+    display: flex;
 }
