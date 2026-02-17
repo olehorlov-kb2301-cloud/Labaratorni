@@ -106,7 +106,7 @@ textarea-wrapper {
   gap: 6px;
 }
 
-#text-area {
+#textarea {
   width: 100%;
   min-height: 100px;       /* трохи вища висота */
   padding: 10px 12px;
@@ -123,11 +123,11 @@ textarea-wrapper {
   outline: none;
 }
 
-#text-area::placeholder {
+#textarea::placeholder {
   color: #ccc;
 }
 
-#char-count {
+#charcount {
   font-size: 14px;
   color: #fff;
   text-align: right;

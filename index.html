@@ -12,23 +12,23 @@
         <div class="title">Support</div>
     </header>
     <main class="content">
-        <div class="div1">
+    
+        <form class="div1">
             Form
             <input id="textblock" type="text" placeholder="Name">
             <input id="textblock" type="email" placeholder="E-mail" required>
             <div1 class="textarea-wrapper">
-                <textarea id="text-area" maxlength="300" placeholder="Description of problem" required></textarea>
-                <div id="char-count">0 / 300</div>
+                <textarea id="textarea" maxlength="300" placeholder="Description of problem" required></textarea>
+                <div id="charcount">0 / 300</div>
             </div1>
             <input id="conf" type="checkbox" required>
                 <label for="conf"> Agreement with the terms of use</label><br>
-            <button onclick="alert('Надіслано')" type="submit">Submit</button>
-
-        </div>
+            <button type="submit">Submit</button> 
+        </form>
     </main>
     <script>
-        const textarea = document.getElementById("text-area");
-        const charCount = document.getElementById("char-count");
+        const textarea = document.getElementById("textarea");
+        const charCount = document.getElementById("charcount");
 
         textarea.addEventListener("input", () => {
             const currentLength = textarea.value.length;
