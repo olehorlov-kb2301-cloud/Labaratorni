@@ -15,19 +15,21 @@
     
         <form class="div1">
             Form
-            <input id="textblock" type="text" placeholder="Name">
-            <input id="textblock" type="email" placeholder="E-mail" required>
+            <input id="textblock" type="text" placeholder="Name">  <!-- Строка введення ім'я (необов'язкова) -->
+            <input id="textblock" type="email" placeholder="E-mail" required> <!-- Строка введення пошти (ов'язкова) -->
             <div1 class="textarea-wrapper">
-                <textarea id="textarea" maxlength="300" placeholder="Description of problem" required></textarea>
+                <textarea id="textarea" maxlength="300" placeholder="Description of problem" required></textarea> <!-- Строка опису проблеми (до 300 символів) -->
                 <div id="charcount">0 / 300</div>
             </div1>
             <input id="conf" type="checkbox" required>
-                <label for="conf"> Agreement with the terms of use</label><br>
-            <button type="submit">Submit</button> 
+                <label for="conf"> Agreement with the terms of use</label><br> <!-- Галочка згоди з умовами використування -->
+            <button type="submit">Submit</button> <!-- Кнопка відправки форми -->
         </form>
     </main>
-    <script>
-        const textarea = document.getElementById("textarea");
+
+    <!-- JS скрипт для підрахунку символів -->
+    <script> 
+        const textarea = document.getElementById("textarea"); 
         const charCount = document.getElementById("charcount");
 
         textarea.addEventListener("input", () => {
@@ -35,6 +37,7 @@
             charCount.textContent = `${currentLength} / 300`;
     });
     </script>
+    
 
     <footer>FOOTER @2026</footer>
 </body>
