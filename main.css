@@ -3,8 +3,7 @@
 }
 .content {
     display: flex;
-    gap: 20px;
-
+    justify-content: center;
     padding: 20px;
     min-height: calc(100vh - 160px); /* header + footer */
 }
@@ -133,7 +132,7 @@ textarea-wrapper {
   color: #fff;
   text-align: right;
 }
-#text_block{
+#textblock{
     width: 100%;
   min-height: 100px;       /* трохи вища висота */
   padding: 10px 12px;
@@ -148,4 +147,9 @@ textarea-wrapper {
   color: white;
   resize: vertical;             /* можна змінювати висоту, але не ширину */
   outline: none;
+}
+label{
+    font-family: "Minecraft", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
 }

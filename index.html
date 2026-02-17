@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>LocalSite</title>
+    <title>Support</title>
 </head>
 <body>
 
     <header>
-        <div class="title">Comments</div>
+        <div class="title">Support</div>
     </header>
     <main class="content">
         <div class="div1">
-            Posting
-            <input id="text_block" type="text" placeholder="Name">
-            <input id="text_block" type="email" placeholder="E-mail">
+            Form
+            <input id="textblock" type="text" placeholder="Name">
+            <input id="textblock" type="email" placeholder="E-mail" required>
             <div1 class="textarea-wrapper">
-                <textarea id="text-area" maxlength="300" placeholder="Text"></textarea>
+                <textarea id="text-area" maxlength="300" placeholder="Description of problem" required></textarea>
                 <div id="char-count">0 / 300</div>
             </div1>
-            <button type="submit">Post</button>
+            <input id="conf" type="checkbox" required>
+                <label for="conf"> Agreement with the terms of use</label><br>
+            <button onclick="alert('Надіслано')" type="submit">Submit</button>
+
         </div>
-        <div class="div2">Posted (WIP)</div>
     </main>
     <script>
         const textarea = document.getElementById("text-area");
