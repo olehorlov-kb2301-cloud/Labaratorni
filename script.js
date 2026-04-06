@@ -39,3 +39,16 @@ for (let i = 0; i < grades.length; i++){
 }
 console.log("Max: ", grade_max)
 console.log("Min: ", grade_min)
+
+// Логіка для теми: Реєстрація користувача.
+
+
+const btn = document.getElementById("Submit_button")
+
+btn.addEventListener("click", function(){
+    const user = {
+        username: document.getElementById("username").value,
+        email: document.getElementById("email").value
+    }
+    console.log(user)
+})

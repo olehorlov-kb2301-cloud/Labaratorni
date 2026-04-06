@@ -132,7 +132,7 @@ textarea-wrapper {
   color: #fff;
   text-align: right;
 }
-#textblock{
+#username, #email, #password{
     width: 100%;
   min-height: 100px;       /* трохи вища висота */
   padding: 10px 12px;
