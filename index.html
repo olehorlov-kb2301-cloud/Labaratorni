@@ -7,25 +7,61 @@
     <title>Оцінювання студента</title>
 </head>
 <body>
-    <header>
-        <div class="title">Support</div>
-    </header>
-    <main class="content">
-    
-        <div class="div1">
-            Registration
-            <input id="username" type="text" placeholder="Username" required>  <!-- Строка введення ім'я (необов'язкова) -->
-            <input id="email" type="email" placeholder="E-mail" required> <!-- Строка введення пошти (ов'язкова) -->
-            <input id="password" type="password" placeholder="Password" required> <!-- Строка введення пошти (ов'язкова) -->
-            <input id="conf" type="checkbox" required>
-                <label for="conf"> Agreement with the terms of use</label><br> <!-- Галочка згоди з умовами використування -->
-            <button id="Submit_button" type="submit">Submit</button> <!-- Кнопка відправки форми -->
-        </div>
-    </main>
-    
-    <footer>FOOTER @2026</footer>
+    <div>
+        <label for="name"></label>
+        <input type="text"  placeholder="name" name="name", id="name">
 
-    <script src="script.js"></script>
+        <label for="company"></label>
+        <input type="text" placeholder="email" name="email" id="email">
 
+        <label for="company"></label>
+        <input type="text" placeholder="company" name="company" id="company">
+        <label for="submit"></label>
+        <button id="submit">Submit</button>
+    </div>
 </body>
+<script>
+
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(data => {
+
+            data.forEach(post => {
+                console.log(post);
+            
+        const f =  document.querySelector('body');
+
+        const name = document.createElement('h1');
+        const email = document.createElement('p');
+        const company = document.createElement('h1');
+
+        name.innerText = post.name;
+        email.innerText = post.email;
+        company.innerText = post.company;
+        f.appendChild(name)
+        })
+    })
+
+    
+        const NameBlock = document.getElementById('name')
+        const EmailBlock = document.getElementById('email')
+        const CompanyBlock = document.getElementById('company')
+        const sendBtn = document.getElementById('submit')
+
+        sendBtn.addEventListener('click', () => {
+            fetch('https://jsonplaceholder.typicode.com/users', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name: NameBlock.value,
+                    email: EmailBlock.value,
+                    company: CompanyBlock.value,
+                })
+            }).then(response => response.json())
+              .then(data => {
+                console.log(data);
+              })
+        })
+            
+    
+</script>
 </html>
